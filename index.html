@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="x5-fullscreen" content="true">
+	<meta name="full-screen" content="yes">
+    <title>scratch</title>
+	<script>
+		var phoneScale = parseInt(window.screen.width)/750;
+		if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+		  if(parseFloat(RegExp.$1)>2.3){
+		    document.write('<meta name="viewport" content="width=750, minimum-scale='+ phoneScale +', maximum-scale='+ phoneScale +', target-densitydpi=device-dpi" />');
+		  }else{
+		    document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi" />');
+		  }
+		}else{
+		  document.write('<meta name="viewport" content="width=750,user-scalable=no, minimum-scale='+ phoneScale +', maximum-scale='+ phoneScale +'" />');
+		}
+	</script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

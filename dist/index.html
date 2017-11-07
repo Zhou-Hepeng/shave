@@ -1,0 +1,10 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=x5-fullscreen content=true><meta name=full-screen content=yes><title>scratch</title><script>var phoneScale = parseInt(window.screen.width)/750;
+		if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+		  if(parseFloat(RegExp.$1)>2.3){
+		    document.write('<meta name="viewport" content="width=750, minimum-scale='+ phoneScale +', maximum-scale='+ phoneScale +', target-densitydpi=device-dpi" />');
+		  }else{
+		    document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi" />');
+		  }
+		}else{
+		  document.write('<meta name="viewport" content="width=750,user-scalable=no, minimum-scale='+ phoneScale +', maximum-scale='+ phoneScale +'" />');
+		}</script><link href=/static/css/app.ec9c3c121e1be455248131bafe998cb7.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.02d29deca4f5b5c29b43.js></script><script type=text/javascript src=/static/js/vendor.ccca4f07c0d4ee3dbd03.js></script><script type=text/javascript src=/static/js/app.2fff35d1cfd1280bef1d.js></script></body></html>
