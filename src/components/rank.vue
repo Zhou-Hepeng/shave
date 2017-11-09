@@ -13,7 +13,7 @@
         <span class="score">成绩</span>
         <span class="phone">手机号</span>
       </div>
-      <div class="my-rank" v-if="mydata.isgame == 1 && mydata.rank">
+      <div class="my-rank" v-if="mydata.isgame == 1 && mydata.iswinn == 0 && mydata.rank">
         <i class="my">我的</i>
         <span>{{mydata.rank}}</span>
         <span class="score">{{timeConversion(mydata.scoretime)}}</span>
@@ -22,8 +22,8 @@
       <div class="myRankShow" v-if="mydata.iswinn == 1">
         已获得过车模，给其他小伙伴机会哦~
       </div>
-      <div class="myRankShow" v-if="(mydata.isgame == '0' || mydata.isgame == '1') &&  !mydata.rank">
-        {{mydata.isgame == 0 ? '您还没有玩儿过~' : mydata.isgame == 1 ? '您的排行榜将在明天显示哦~' : ''}}
+      <div class="myRankShow" v-if="mydata.iswinn != 1 && (mydata.isgame == 0 || mydata.isgame == 1) &&  !mydata.rank">
+        {{mydata.isgame == 0 ? '您还没有玩儿过~' : (mydata.isgame == 1 ? '您的排行榜将在明天显示哦~' : '')}}
       </div>
       <ul class="rank-no-list" ref="rank-list" @scroll="loadMore" data-noscroll="true">
         <li v-for="(item, index) in rankList" data-noscroll="true">
@@ -39,8 +39,11 @@
               <span class="more-ring"></span> 正在加载...
           </div>
         </li>
+        <li class="bottom-prompt" v-if="bottomPrompt">
+          <span>别滑了 已经到底了~</span>
+        </li>
       </ul>
-      <div class="more" v-if="!rankList.length">
+      <div class="more" v-if="loading">
           <span class="more-ring"></span> 正在加载...
       </div>
     </div>
@@ -60,6 +63,8 @@ export default {
     // 排行榜列表
     rankList: [],
     meData:false,
+    loading:true,
+    bottomPrompt:false
   }),
   created() {
     //查看有没有缓存
@@ -71,6 +76,7 @@ export default {
       this.rankList = rankData.rankList
       this.page = rankData.page
       this.meData = true
+      this.loading = false
       //每次都去请求自身排名
       this.ajax(`/m/2017110201/getrank.aspx?page=1&size=20`,{},data => {
         if(data.data.result == 1){
@@ -101,7 +107,8 @@ export default {
     getRankData(){
       this.loadmore = false
       this.ajax(`/m/2017110201/getrank.aspx?page=${this.page}&size=20`,{},data => {
-        if(data.data.result == 1 && data.data.data.length){
+        this.loading = false
+        if(data.data.result == 1){
           if (data.data.mydata) {
             this.mydata = data.data.mydata
           }
@@ -111,6 +118,7 @@ export default {
           this.loadmore = true
           //增加页数
           this.page++
+
 
           //存储
           let rankData = {}
@@ -123,12 +131,14 @@ export default {
           //如果条数少于20条 && 下一次没有数据 && 禁止加载
           if (data.data.data.length < 20) {
             this.prohibit = false
+            this.bottomPrompt = true
           }
         }else{
           this.prohibit = false
         }
        },err => {
          alert('加载失败')
+          this.loading = false
        })
     },
     //时间转换
@@ -153,6 +163,8 @@ export default {
 
       return minute + `' ` + second + `" ` + millisecond
     },
+  },
+  mounted(){
   }
 }
 </script>
@@ -362,6 +374,12 @@ ul, li{
       -webkit-transform: translate3d(0,0,0);
       transform: translate3d(0,0,0) rotate(0deg);
     }
+  }
+  .bottom-prompt{
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px
   }
 /* more */
 .rank-list .load-more,.rank-no-list .load-more{position:relative;margin: 30px auto;}

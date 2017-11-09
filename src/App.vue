@@ -33,20 +33,20 @@
         //所有图片预加载
         imageAll:[
             // 美女图
-          'http://topic.360che.com/m/2017110301/img/screen1.jpg',
-          'http://topic.360che.com/m/2017110301/img/screen2.jpg',
-          'http://topic.360che.com/m/2017110301/img/screen3.jpg',
-          'http://topic.360che.com/m/2017110301/img/screen4.jpg',
-          'http://topic.360che.com/m/2017110301/img/screen5.jpg',
-          'http://topic.360che.com/m/2017110301/img/screen6.jpg',
-          'http://topic.360che.com/m/2017110301/img/screen7.jpg',
+          'https://topic.360che.com/m/2017110301/img/screen1.jpg',
+          'https://topic.360che.com/m/2017110301/img/screen2.jpg',
+          'https://topic.360che.com/m/2017110301/img/screen3.jpg',
+          'https://topic.360che.com/m/2017110301/img/screen4.jpg',
+          'https://topic.360che.com/m/2017110301/img/screen5.jpg',
+          'https://topic.360che.com/m/2017110301/img/screen6.jpg',
+          'https://topic.360che.com/m/2017110301/img/screen7.jpg',
           'https://s.kcimg.cn/wap/images/shaveImg/belle1.jpg',
-          'https://s.kcimg.cn/wap/images/shaveImg/belle2.jpg',
-          'https://s.kcimg.cn/wap/images/shaveImg/belle3.jpg',
+          'https://s.kcimg.cn/wap/images/shaveImg/belle23.jpg',
+          'https://s.kcimg.cn/wap/images/shaveImg/belle33.jpg',
           'https://s.kcimg.cn/wap/images/shaveImg/belle4.jpg',
           'https://s.kcimg.cn/wap/images/shaveImg/belle5.jpg',
           'https://s.kcimg.cn/wap/images/shaveImg/belle6.jpg',
-          'https://s.kcimg.cn/wap/images/shaveImg/belle7.jpg',
+          'https://s.kcimg.cn/wap/images/shaveImg/belle73.jpg',
           'https://s.kcimg.cn/wap/images/shaveImg/belle.png',
           'https://s.kcimg.cn/wap/images/shaveImg/goat1.png',
           'https://s.kcimg.cn/wap/images/shaveImg/eye2.png',
@@ -120,8 +120,8 @@
   }
   @font-face{
      font-family: 'font';
-     src:url('http://topic.360che.com/m/2017110301/font/font.woff') format('woff'),
-         url('http://topic.360che.com/m/2017110301/font/font.ttf') format('truetype');
+     src:url('https://topic.360che.com/m/2017110301/font/font.woff') format('woff'),
+         url('https://topic.360che.com/m/2017110301/font/font.ttf') format('truetype');
   }
 
   /* Reset */

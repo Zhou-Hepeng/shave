@@ -5,7 +5,7 @@ export default {
         axios({
             method: 'post',
             // http://topic.360che.com
-            url: `http://topic.360che.com${url}`,
+            url: `https://topic.360che.com${url}`,
             data: data,
             // headers: {'Content-Type': 'application/x-www-form-urlencoded'},
         })

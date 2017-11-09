@@ -162,20 +162,20 @@
 	.shave{width:650px;height:800px;margin:20px auto 0;overflow:hidden;background-image: url('https://s.kcimg.cn/wap/images/shaveImg/shave-bg.png');}
 	.content{width:600px;height:747px;margin:27px auto 0;}
 	.content1{background-image: url('https://s.kcimg.cn/wap/images/shaveImg/belle1.jpg');}
-	.content2{background-image: url('https://s.kcimg.cn/wap/images/shaveImg/belle2.jpg')}
-	.content3{background-image: url('https://s.kcimg.cn/wap/images/shaveImg/belle3.jpg');}
+	.content2{background-image: url('https://s.kcimg.cn/wap/images/shaveImg/belle23.jpg')}
+	.content3{background-image: url('https://s.kcimg.cn/wap/images/shaveImg/belle33.jpg');}
 	.content4{background-image: url('https://s.kcimg.cn/wap/images/shaveImg/belle4.jpg')}
 	.content5{background-image: url('https://s.kcimg.cn/wap/images/shaveImg/belle5.jpg');}
 	.content6{background-image: url('https://s.kcimg.cn/wap/images/shaveImg/belle6.jpg')}
-	.content7{background-image: url('https://s.kcimg.cn/wap/images/shaveImg/belle7.jpg');}
+	.content7{background-image: url('https://s.kcimg.cn/wap/images/shaveImg/belle73.jpg');}
 
-  .loadBelle1{background-image: url('http://topic.360che.com/m/2017110301/img/screen1.jpg');}
-  .loadBelle2{background-image: url('http://topic.360che.com/m/2017110301/img/screen2.jpg')}
-  .loadBelle3{background-image: url('http://topic.360che.com/m/2017110301/img/screen3.jpg');}
-  .loadBelle4{background-image: url('http://topic.360che.com/m/2017110301/img/screen4.jpg')}
-  .loadBelle5{background-image: url('http://topic.360che.com/m/2017110301/img/screen5.jpg');}
-  .loadBelle6{background-image: url('http://topic.360che.com/m/2017110301/img/screen6.jpg')}
-  .loadBelle7{background-image: url('http://topic.360che.com/m/2017110301/img/screen7.jpg');}
+  .loadBelle1{background-image: url('https://topic.360che.com/m/2017110301/img/screen1.jpg');}
+  .loadBelle2{background-image: url('https://topic.360che.com/m/2017110301/img/screen2.jpg')}
+  .loadBelle3{background-image: url('https://topic.360che.com/m/2017110301/img/screen3.jpg');}
+  .loadBelle4{background-image: url('https://topic.360che.com/m/2017110301/img/screen4.jpg')}
+  .loadBelle5{background-image: url('https://topic.360che.com/m/2017110301/img/screen5.jpg');}
+  .loadBelle6{background-image: url('https://topic.360che.com/m/2017110301/img/screen6.jpg')}
+  .loadBelle7{background-image: url('https://topic.360che.com/m/2017110301/img/screen7.jpg');}
   #canvas{-webkit-overflow-scrolling: touch;}
 	.shave-end{position: fixed;top:0;left:0;bottom:0;right:0;background-color: rgba(0,0,0,.6);z-index:200;}
 	.pop{width:750px;height:535px;margin:117px 0 0;color:#eccfff;font-size:36px;overflow:hidden;background-image: url('https://s.kcimg.cn/wap/images/shaveImg/pop-bg.png');font-family: 'font'}
@@ -216,7 +216,7 @@
 	.subtitle span{color:#eed809;}
 
   /*提交成功 || 提交失败*/
-  .status{width:750px;height:535px;margin:117px 0 40px;color:#eccfff;font-size:30px;overflow:hidden;background-image: url('https://s.kcimg.cn/wap/images/shaveImg/pop-bg.png');}
+  .status{width:750px;height:535px;margin:117px 0 40px;color:#eccfff;font-size:30px;overflow:hidden;background-image: url('https://s.kcimg.cn/wap/images/shaveImg/pop-bg.png');text-align: center;}
   .status img{
     margin-top: 120px;
   }
@@ -287,22 +287,22 @@
         // 美女图
         belle:[
         	'https://s.kcimg.cn/wap/images/shaveImg/belle1.jpg',
-        	'https://s.kcimg.cn/wap/images/shaveImg/belle2.jpg',
-        	'https://s.kcimg.cn/wap/images/shaveImg/belle3.jpg',
+        	'https://s.kcimg.cn/wap/images/shaveImg/belle23.jpg',
+        	'https://s.kcimg.cn/wap/images/shaveImg/belle33.jpg',
         	'https://s.kcimg.cn/wap/images/shaveImg/belle4.jpg',
         	'https://s.kcimg.cn/wap/images/shaveImg/belle5.jpg',
         	'https://s.kcimg.cn/wap/images/shaveImg/belle6.jpg',
-        	'https://s.kcimg.cn/wap/images/shaveImg/belle7.jpg'
+        	'https://s.kcimg.cn/wap/images/shaveImg/belle73.jpg'
         ],
         //遮罩
         screen:[
-        	'http://topic.360che.com/m/2017110301/img/screen1.jpg',
-        	'http://topic.360che.com/m/2017110301/img/screen2.jpg',
-          'http://topic.360che.com/m/2017110301/img/screen3.jpg',
-          'http://topic.360che.com/m/2017110301/img/screen4.jpg',
-          'http://topic.360che.com/m/2017110301/img/screen5.jpg',
-          'http://topic.360che.com/m/2017110301/img/screen6.jpg',
-          'http://topic.360che.com/m/2017110301/img/screen7.jpg',
+        	'https://topic.360che.com/m/2017110301/img/screen1.jpg',
+        	'https://topic.360che.com/m/2017110301/img/screen2.jpg',
+          'https://topic.360che.com/m/2017110301/img/screen3.jpg',
+          'https://topic.360che.com/m/2017110301/img/screen4.jpg',
+          'https://topic.360che.com/m/2017110301/img/screen5.jpg',
+          'https://topic.360che.com/m/2017110301/img/screen6.jpg',
+          'https://topic.360che.com/m/2017110301/img/screen7.jpg',
         ],
         // canvas宽高
         Width:'',
@@ -386,12 +386,13 @@
             if(data.data.result == 1){
               this.getData = data.data.data
               this.loadBelle = false
+              //游戏关数 + 1
+              this.checkpoint++;
               //重新绘制遮罩层
               this.draw()
               //关闭弹层
               this.shavePop = false;
-              //游戏关数 + 1
-              this.checkpoint++;
+              this.nextPass = true;
             }else{
               //如果出错，请求
               this.again();
@@ -413,6 +414,8 @@
             this.shavePop = false
             //关闭提交成功弹层
             this.submitSuccess = false
+            //关闭提交失败弹层
+            this.submitErr = false
             //清空游戏总时间
             this.gameSumDate = 0
             //重新计算游戏最开始时间
@@ -435,9 +438,9 @@
         // alert(1)
         // let backups = sessionStorage.getItem('backups')
         // if(backups){
-        //   alert(this.uid)
-        //   alert(this.gameSumDate)
-        //   alert(2)
+          // alert(this.uid)
+          // alert(this.gameSumDate)
+          // alert(2)
         //   this.getData = JSON.parse(backups)
         //   alert(JSON.parse(backups))
         // }
@@ -451,6 +454,7 @@
           return
         }
         this.submitIng = true
+        // alert(this.uid)
         // alert(JSON.stringify(this.getData))
         // alert(this.getData.sinfoid)
         // alert(this.encrypted(this.gameSumDate + ''))
@@ -799,8 +803,8 @@
 	            if(!_this.gameSwitch){
 	            	//允许更换时间
 	            	_this.gameSwitch = true
-                //设置可以进入下一关
-                _this.nextPass = true;
+                // //设置可以进入下一关
+                // _this.nextPass = true;
                 //设置每一关游戏结束时间
                 _this.gameEndDate = +new Date();
 
